@@ -1,0 +1,43 @@
+site_name: Iu môi trường
+site_description: Một trang dành cho những người yêu môi trường
+site_author: duykhanh471
+
+nav:
+  - 'Trang chủ': 
+    - 'Môi trường': index.md
+
+
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - search.highlighting
+    - search.share
+    - search.suggest
+  name: material
+
+plugins:
+  - search
+
+extra:
+  generator: false
