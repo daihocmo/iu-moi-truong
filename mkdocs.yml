@@ -1,10 +1,19 @@
-site_name: Iu môi trường
-site_description: Một trang dành cho những người yêu môi trường
+site_name: Lá cây xanh
+site_description: tôi ăn cắp ý tưởng từ r/Frugal và kha khá chỗ khác
 site_author: duykhanh471
 
 nav:
-  - 'Trang chủ': 
-    - 'Môi trường': index.md
+  - 'Trang chủ': 'index.md'
+  - 'Frugal': 'frugal.md'
+  - 'Ăn uống': 'an-uong.md'
+  - 'Lối sống và nhà cửa':
+    - 'Chống chủ nghĩa tiêu dùng': 'anti-consumption.md'
+    - 'Không chất thải': 'zero-waste.md'
+    - 'Dọn dẹp': 'don-dep.md'
+  - 'Tài chính & Mua sắm':
+    - 'Quản lý tài chính': 'quan-ly-tai-chinh.md'
+    - 'Mua đồ Secondhand': 'mua-do-cu.md'
+  - 'Môi trường': 'moi-truong.md'
 
 
 theme:
@@ -12,7 +21,7 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: green
       accent: grey
       toggle:
         icon: material/brightness-7
@@ -21,7 +30,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: green
       accent: grey
       toggle:
         icon: material/brightness-4
@@ -35,7 +44,14 @@ theme:
     - search.share
     - search.suggest
   name: material
+  icon: leafy_green
 
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
 plugins:
   - search
 
