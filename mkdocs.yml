@@ -5,6 +5,7 @@ site_author: duykhanh471
 nav:
   - 'Trang chủ': 'index.md'
   - 'Frugal': 'frugal.md'
+  - 'Lối sống tối giản': 'loi-song-toi-gian.md'
   - 'Ăn uống': 'an-uong.md'
   - 'Lối sống và nhà cửa':
     - 'Chống chủ nghĩa tiêu dùng': 'anti-consumption.md'
@@ -12,8 +13,9 @@ nav:
     - 'Dọn dẹp': 'don-dep.md'
   - 'Tài chính & Mua sắm':
     - 'Quản lý tài chính': 'quan-ly-tai-chinh.md'
-    - 'Mua đồ Secondhand': 'mua-do-cu.md'
+    - 'Mua đồ cũ': 'mua-do-cu.md'
   - 'Môi trường': 'moi-truong.md'
+  - 'Gợi ý sách': 'goi-y-sach.md'
 
 
 theme:
@@ -51,7 +53,19 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      
+  - meta
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
 plugins:
   - search
 

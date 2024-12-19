@@ -1,1 +1,1 @@
-Lấy từ ghi chú của mình trong cuốn sách của Marie Kondo
+Một bài viết về dọn dẹp
